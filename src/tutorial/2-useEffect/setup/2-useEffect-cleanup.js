@@ -11,6 +11,7 @@ const UseEffectCleanup = () => {
   }
 
   // the purpose of using a return and clean up is because without it data would keep building up in the browser and it would crash.
+  // see lesson for more details
   useEffect(() => {
     console.log('useEffect');
     window.addEventListener('resize', handleResize);

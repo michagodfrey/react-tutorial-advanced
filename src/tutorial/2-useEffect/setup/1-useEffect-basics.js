@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 // by default runs after every re-render
-// cleanup function
+// cleanup function - see the [value] at the end of useEffect function
 // second parameter
 const UseEffectBasics = () => {
   const [value, setValue] = useState(0);
-  // everytime the page loads (or some state changes as well?) useEffect runs
+  // everytime the page loads useEffect runs
   useEffect(() => {
     console.log('call useEffect');
     if (value > 1) {

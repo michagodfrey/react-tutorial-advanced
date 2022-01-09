@@ -14,7 +14,7 @@ const UseEffectFetchData = () => {
   useEffect(async () => {
     getUsers();
   }, []);
-  // note the empty dependancy, would be in an infinte loop and crash without it
+  // note the empty dependancy, would be in an infinte loop and crash without it, see lesson video
 
   return (
     <>
